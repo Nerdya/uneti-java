@@ -42,6 +42,9 @@ public class Arr {
 		System.out.println("Cac so nguyen to co trong mang:");
 		for (int i = 0; i < n; i++) {
 			boolean check = true;
+			if (arr[i] < 2) {
+				check = false;
+			}
 			for (int j = 2; j <= Math.sqrt(arr[i]); j++) {
 				if (arr[i] % j == 0) {
 					check = false;
