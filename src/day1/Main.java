@@ -1,8 +1,8 @@
-package main_day1;
+package day1;
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello!");
+		System.out.print("Hello!");
 		System.out.println("Hello line!");
 		System.out.println("Ket thuc");
 		int a = 2;
