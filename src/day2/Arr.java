@@ -8,6 +8,10 @@ public class Arr {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Nhap so phan tu trong mang: ");
 		int n = scanner.nextInt();
+		while (n <= 0) {
+			System.out.println("So phan tu khong hop le. Nhap lai:");
+			n = scanner.nextInt();
+		}
 		int arr[] = new int[n];
 		for (int i = 0; i < n; i++) {
 			System.out.println("arr[" + i + "] = ");
@@ -51,14 +55,14 @@ public class Arr {
 		System.out.println();
 		
 		for (int i = 0 ; i < n - 1 ; i++) {
-            for (int j = i + 1; j < n ; j++) {
-                if (arr[i] > arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
+			for (int j = i + 1; j < n ; j++) {
+				if (arr[i] > arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
 		System.out.println("Mang da duoc sap xep tang dan:");
 		for (int i = 0; i < n; i++) {
 			System.out.print(arr[i] + " ");
