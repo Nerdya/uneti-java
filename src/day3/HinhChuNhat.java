@@ -1,13 +1,13 @@
 package day3;
 
 public class HinhChuNhat {
-	private int dai;
-	private int rong;
+	private double dai;
+	private double rong;
 
 	public HinhChuNhat() {
 	}
 	
-	public HinhChuNhat(int a, int b) {
+	public HinhChuNhat(double a, double b) {
 		if (a >= b) {
 			this.dai = a;
 			this.rong = b;
@@ -17,27 +17,27 @@ public class HinhChuNhat {
 		}
 	}
 	
-	public int getDai() {
+	public double getDai() {
         return dai;
     }
 
-    public void setDai(int dai) {
+    public void setDai(double dai) {
         this.dai = dai;
     }
 
-    public int getRong() {
+    public double getRong() {
         return rong;
     }
 
-    public void setRong(int rong) {
+    public void setRong(double rong) {
         this.rong = rong;
     }
     
-    public int ChuVi() {
+    public double ChuVi() {
         return 2 * (this.dai + this.rong);
     }
     
-    public int DienTich() {
+    public double DienTich() {
     	return this.dai * this.rong;
     }
 }
