@@ -22,7 +22,7 @@ public class HinhChuNhat {
 	}
 
 	public void setDai(double dai) {
-    	this.dai = dai;
+		this.dai = dai;
 	}
 
 	public double getRong() {
@@ -30,11 +30,11 @@ public class HinhChuNhat {
 	}
 
 	public void setRong(double rong) {
-    	this.rong = rong;
+		this.rong = rong;
 	}
 
 	public double ChuVi() {
-    	return 2 * (this.dai + this.rong);
+		return 2 * (this.dai + this.rong);
 	}
 
 	public double DienTich() {
