@@ -32,4 +32,15 @@ public class WorkerService implements WorkerServiceInterface {
 		}
 	}
 	
+	@Override
+	public List<Worker> delete(List<Worker> workers, Scanner scanner) {
+		System.out.print("Nhap ID cua cong nhan can xoa: ");
+		String id = scanner.nextLine();
+		for (Worker worker: workers) {
+			if (worker.getId().equals(id)) {
+				workers.remove(worker);
+			}
+		}
+		return workers;
+	}
 }

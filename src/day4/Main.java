@@ -14,5 +14,7 @@ public class Main {
 		System.out.println("Worker Manager");
 		List<Worker> workers = workerService.insert(scanner);
 		workerService.show(workers);
+		workers = workerService.delete(workers, scanner);
+		workerService.show(workers);
 	}
 }

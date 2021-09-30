@@ -8,4 +8,5 @@ import java.util.Scanner;
 public interface WorkerServiceInterface {
 	List<Worker> insert(Scanner scanner);
 	void show(List<Worker> workers);
+	List<Worker> delete(List<Worker> workers, Scanner scanner);
 }

@@ -51,15 +51,29 @@ public class Worker extends Person {
 		this.setId(scanner.nextLine());
 		System.out.print("Nhap ten: ");
 		this.setName(scanner.nextLine());
-		System.out.print("Nhap tuoi: ");
-		this.setAge(scanner.nextInt());
+		int age;
+		do {			
+			System.out.print("Nhap tuoi: ");
+			age = scanner.nextInt();
+			if (age <= 0) {
+				System.out.println("Tuoi khong hop le!");
+			}
+		} while (age <= 0);
+		this.setAge(age);
 		scanner.nextLine();
 		System.out.print("Nhap dia chi: ");
 		this.setAddress(scanner.nextLine());
 		System.out.print("Nhap chuc vu: ");
 		this.setPosition(scanner.nextLine());
-		System.out.print("Nhap so luong san pham: ");
-		this.setNumberProduct(scanner.nextInt());
+		int numberProduct;
+		do {			
+			System.out.print("Nhap so luong san pham: ");
+			numberProduct = scanner.nextInt();
+			if (numberProduct <= 0) {
+				System.out.println("So luong san pham khong hop le!");
+			}
+		} while (numberProduct <= 0);
+		this.setNumberProduct(numberProduct);
 		scanner.nextLine();
 	}
 
