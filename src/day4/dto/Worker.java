@@ -85,6 +85,7 @@ public class Worker extends Person {
 		System.out.println("Dia chi: " + this.getAddress());
 		System.out.println("Chuc vu: " + this.getPosition());
 		System.out.println("So luong san pham: " + this.getNumberProduct());
+		System.out.println("Tien: " + this.money());
 	}
 
 }
