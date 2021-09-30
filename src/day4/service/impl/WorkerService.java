@@ -36,10 +36,15 @@ public class WorkerService implements WorkerServiceInterface {
 	public List<Worker> delete(List<Worker> workers, Scanner scanner) {
 		System.out.print("Nhap ID cua cong nhan can xoa: ");
 		String id = scanner.nextLine();
+		boolean check = false;
 		for (Worker worker: workers) {
 			if (worker.getId().equals(id)) {
 				workers.remove(worker);
+				check = true;
 			}
+		}
+		if (check) {
+			System.out.println("Khong co cong nhan nao voi ID " + id);
 		}
 		return workers;
 	}
