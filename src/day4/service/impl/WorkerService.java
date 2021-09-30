@@ -41,6 +41,7 @@ public class WorkerService implements WorkerServiceInterface {
 			if (worker.getId().equals(id)) {
 				workers.remove(worker);
 				check = true;
+				break;
 			}
 		}
 		if (check) {
